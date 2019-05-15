@@ -10,7 +10,7 @@
 
 
 ### Asociation
-- has_many :groups , through :member
+- has_many :groups , through :members
 - has_many :messages
 - has_many：members
 
@@ -23,7 +23,7 @@
 
 ### Asociation
 - has_many: users through: members
-- has_many: members through: users
+- has_many: messages through: users
 
 ## memberテーブル
 
