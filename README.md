@@ -19,7 +19,7 @@
 |Column|Type|Opitions|
 |------|----|---------|
 |name|string|null: false,uniqe:true|
-|member_id|integer|null:false, foreign_key: true|
+
 
 ### Asociation
 - has_many: users through: members
