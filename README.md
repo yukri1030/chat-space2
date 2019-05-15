@@ -1,3 +1,4 @@
+
 # README
 
 
@@ -25,7 +26,7 @@
 |name|string|null: false,uniqe:true|
 |member_id|integer|null:false, foreign_key: true|
 
-### Adociation
+### Asociation
 - has_many: members through: users
 
 ## memberテーブル
@@ -39,6 +40,7 @@
 
 - belongs_to: group 
 - belongs_to: user
+- has_many: messages
 
 
 ## messageテーブル
@@ -46,13 +48,12 @@
 |Column|Type|Opitions|
 |------|----|---------|
 |id|integer|null:false, foreign_key: true｜
-|massage|text|
+|message|text|
 |img|string|
 
 ### Association
 
 - belongs_to: user 
+- belongs_to: member
 
 
-gem 'haml-rails'
-gem 'erb2haml'
