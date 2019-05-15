@@ -6,12 +6,7 @@
 ## usersテーブル
 |Column|Type|Opitions|
 |------|----|---------|
-|id|integer|null:false, foreign_key: true|
-|------|----|---------|
-|name|string|nill:false, foreign_key: true, uniqe:true|
-|e-mail|varchar(30)|null:false|
-|message_id|null:false, foreign_key: true|
-|member_id|integer|null:false, foreign_key: true|
+
 
 ### Asociation
 - has_many :groups , through :member
@@ -34,7 +29,7 @@
 |Column|Type|Opitions|
 |------|----|---------|
 |id|integer|null:false, foreign_key: true|
-|user_id|string|null: false,foreign_key :true|
+|user_id|reference|null: false,foreign_key :true|
 |group_id|integer|null:false, foreign_key: true|
 
 
