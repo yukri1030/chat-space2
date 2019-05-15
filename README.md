@@ -17,7 +17,6 @@
 
 |Column|Type|Opitions|
 |------|----|---------|
-|id|integer|null:false, foreign_key: true｜
 |name|string|null: false,uniqe:true|
 |member_id|integer|null:false, foreign_key: true|
 
@@ -28,7 +27,6 @@
 
 |Column|Type|Opitions|
 |------|----|---------|
-|id|integer|null:false, foreign_key: true|
 |user_id|reference|null: false,foreign_key :true|
 |group_id|integer|null:false, foreign_key: true|
 
@@ -42,13 +40,12 @@
 
 |Column|Type|Opitions|
 |------|----|---------|
-|id|integer|null:false, foreign_key: true｜
 |message|text|
 |img|string|
 
 ### Association
 
 - belongs_to: user 
-- belongs_to: member
+- belongs_to: group
 
 
