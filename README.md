@@ -21,7 +21,7 @@
 |member_id|integer|null:false, foreign_key: true|
 
 ### Asociation
-- has_many: members through: users
+- has_many: users through: members
 
 ## memberテーブル
 
