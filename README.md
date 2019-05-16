@@ -7,7 +7,7 @@
 |Column|Type|Opitions|
 |------|----|---------|
 |name|string|null: false,uniqe:true|
-|messages_id|reference|null: false,foreign_key :true|
+
 
 
 ### Asociation
@@ -20,12 +20,11 @@
 |Column|Type|Opitions|
 |------|----|---------|
 |name|string|null: false,uniqe:true|
-|messages_id|reference|null: false,foreign_key :true|
 
 
 ### Asociation
 - has_many: users through: members
-- has_many: messages through: users
+- has_many: messages through: members
 
 ## memberテーブル
 
@@ -33,7 +32,6 @@
 |------|----|---------|
 |user_id|reference|null: false,foreign_key :true|
 |group_id|reference||null:false, foreign_key: true|
-|message_id|reference|null: false,foreign_key :true|
 
 
 - belongs_to: group 
